@@ -37,10 +37,11 @@ techical_manager = "Jose Mourinho"
 
 player_number = 0
 techical_manager_number = 0
-for player in fenerbahce_players:
-    firstname, lastname = fenerbahce_players.split()[0], fenerbahce_players.split()[1]
 
-    if(player == techical_manager):
+for player in fenerbahce_players:
+    firstname, lastname = player.split()[0], player.split()[1]
+
+    if player == techical_manager:
         techical_manager_number += 1 
         print("{0}. Tech. Manager Name: {1} Tech. Manager Lastname: {2}".format(techical_manager_number, firstname, lastname))
     else:
